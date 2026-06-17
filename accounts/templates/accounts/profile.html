@@ -26,6 +26,17 @@ Profile
                 </p>
 
                 <p>
+                    <strong>First Name:</strong>
+                    {{ request.user.first_name }}
+                </p>
+
+                <p>
+                    <strong>Last Name:</strong>
+                    {{ request.user.last_name }}
+                </p>
+
+
+                <p>
                     <strong>Email:</strong>
                     {{ request.user.email }}
                 </p>
@@ -34,7 +45,12 @@ Profile
                     <strong>Date Joined:</strong>
                     {{ request.user.date_joined }}
                 </p>
-
+                <a href="/edit-profile/" class="btn btn-warning me-2">
+                    Edit Profile
+                </a>
+                <a href="/change-password/" class="btn btn-secondary me-2">
+                    Change Password
+                </a>
                 <a href="/dashboard/" class="btn btn-primary">
                     Back to Dashboard
                 </a>
