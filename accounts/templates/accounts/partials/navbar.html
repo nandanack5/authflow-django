@@ -4,23 +4,47 @@
 
         <a class="navbar-brand" href="/">
 
-            AuthFlow Pro
+            AuthFlow
 
         </a>
 
         <div>
 
-            <a class="btn btn-light me-2" href="/login/">
+            {% if user.is_authenticated %}
 
-                Login
+                <a class="btn btn-light me-2" href="/dashboard/">
 
-            </a>
+                    Dashboard
 
-            <a class="btn btn-warning" href="/register/">
+                </a>
 
-                Register
+                <a class="btn btn-warning me-2" href="/profile/">
 
-            </a>
+                    Profile
+
+                </a>
+
+                <a class="btn btn-danger" href="/logout/">
+
+                    Logout
+
+                </a>
+
+            {% else %}
+
+                <a class="btn btn-light me-2" href="/login/">
+
+                    Login
+
+                </a>
+
+                <a class="btn btn-warning" href="/register/">
+
+                    Register
+
+                </a>
+
+            {% endif %}
 
         </div>
 

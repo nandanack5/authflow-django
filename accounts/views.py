@@ -82,6 +82,14 @@ def dashboard(request):
         "accounts/dashboard.html"
     )
 
+@login_required(login_url="/login/")
+def profile(request):
+
+    return render(
+        request,
+        "accounts/profile.html"
+    )
+
 
 def logout_user(request):
 

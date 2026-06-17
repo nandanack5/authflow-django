@@ -1,0 +1,50 @@
+{% extends 'accounts/base.html' %}
+
+{% block title %}
+Profile
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-5">
+
+    <div class="col-md-6">
+
+        <div class="card shadow-lg">
+
+            <div class="card-body">
+
+                <h2 class="text-center mb-4">
+                    👤 My Profile
+                </h2>
+
+                <hr>
+
+                <p>
+                    <strong>Username:</strong>
+                    {{ request.user.username }}
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    {{ request.user.email }}
+                </p>
+
+                <p>
+                    <strong>Date Joined:</strong>
+                    {{ request.user.date_joined }}
+                </p>
+
+                <a href="/dashboard/" class="btn btn-primary">
+                    Back to Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
