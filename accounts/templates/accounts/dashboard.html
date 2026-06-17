@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'accounts/css/dashboard.css' %}">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            AuthFlow
+        </div>
+
+        <div>
+
+            <a href="/logout/">Logout</a>
+
+        </div>
+
+    </nav>
+
+    <div class="dashboard">
+
+        <h1>Welcome {{ request.user.username }} 👋</h1>
+
+        <p>Email: {{ request.user.email }}</p>
+
+        <div class="card">
+
+            <h2>Your Django Dashboard</h2>
+
+            <p>You have successfully logged in.</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
