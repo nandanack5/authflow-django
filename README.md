@@ -1,29 +1,79 @@
-# AuthFlow 🚀
+# 🔐 AuthFlow
 
-A Full Stack Authentication System built with Django.
+A secure authentication system built with **Django** and **Bootstrap 5**.
 
-## Features
+## ✨ Features
 
-- Home Page
-- User Registration
-- User Login
-- Dashboard
-- Profile Management
-- Responsive UI
+* User Registration
+* User Login & Logout
+* User Dashboard
+* User Profile
+* Edit Profile
+* Change Password
+* Flash Messages
+* Responsive Navigation Bar
+* Responsive Footer
 
-## Technologies Used
+## 🛠 Tech Stack
 
-- Python
-- Django
-- HTML5
-- CSS3
-- Git
-- GitHub
+* Python 3
+* Django
+* Bootstrap 5
+* SQLite
+* HTML5
+* CSS3
+* Git & GitHub
 
-## Project Status
+## 📁 Project Structure
 
-🚧 Currently under development
+```
+authflow/
+│
+├── accounts/
+├── config/
+├── static/
+├── templates/
+├── manage.py
+└── requirements.txt
+```
 
-## Author
+## 🚀 Installation
 
-Nandana Rajeev
+```bash
+git clone <repository-url>
+cd authflow
+
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver
+```
+
+Visit:
+
+```
+http://127.0.0.1:8000/
+```
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* Django Authentication
+* Django Forms
+* Template Inheritance
+* Static File Management
+* Bootstrap Integration
+* Git Version Control
+* Basic Full Stack Development
+
+## 👩‍💻 Developer
+
+**Nandana Rajeev**
+
+Built as a portfolio project while learning Django Full Stack Development.
