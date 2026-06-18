@@ -1,47 +1,79 @@
 # 🔐 AuthFlow
 
-A secure authentication system built with **Django** and **Bootstrap 5**.
+A modern user authentication system built with **Django**, **Bootstrap 5**, and **SQLite**.
+
+---
 
 ## ✨ Features
 
-* User Registration
-* User Login & Logout
-* User Dashboard
-* User Profile
-* Edit Profile
-* Change Password
-* Flash Messages
-* Responsive Navigation Bar
-* Responsive Footer
+- 👤 User Registration
+- 🔑 Secure Login & Logout
+- 📋 User Dashboard
+- 📝 Edit Profile
+- 🔒 Change Password
+- 💬 Flash Messages
+- 📱 Responsive Navigation Bar
+- 🎨 Bootstrap 5 UI
+
+---
 
 ## 🛠 Tech Stack
 
-* Python 3
-* Django
-* Bootstrap 5
-* SQLite
-* HTML5
-* CSS3
-* Git & GitHub
+- Python
+- Django
+- Bootstrap 5
+- HTML5
+- CSS3
+- SQLite
+- Git & GitHub
 
-## 📁 Project Structure
+---
+
+## 📷 Project Screenshots
+
+### 🏠 Home Page
+
+![Home](screenshots/home.png)
+
+### 🔑 Login Page
+
+![Login](screenshots/login.png)
+
+### 📝 Register Page
+
+![Register](screenshots/register.png)
+
+### 📊 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### 👤 Profile
+
+![Profile](screenshots/profile.png)
+
+---
+
+## 📂 Project Structure
 
 ```
 authflow/
 │
 ├── accounts/
 ├── config/
-├── static/
-├── templates/
+├── screenshots/
+├── requirements.txt
 ├── manage.py
-└── requirements.txt
+└── README.md
 ```
+
+---
 
 ## 🚀 Installation
 
 ```bash
-git clone <repository-url>
-cd authflow
+git clone https://github.com/nandanack5/authflow-django.git
+
+cd authflow-django
 
 python -m venv venv
 
@@ -54,26 +86,39 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Visit:
+Open:
 
 ```
 http://127.0.0.1:8000/
 ```
 
+---
+
 ## 🎯 Learning Outcomes
 
 This project demonstrates:
 
-* Django Authentication
-* Django Forms
-* Template Inheritance
-* Static File Management
-* Bootstrap Integration
-* Git Version Control
-* Basic Full Stack Development
+- Django Authentication
+- Django Forms
+- Template Inheritance
+- Bootstrap Integration
+- Static File Management
+- Git Version Control
+
+---
+
+## 🔮 Future Improvements
+
+- Profile Picture Upload
+- Email Verification
+- Password Reset
+- Dark Mode
+- REST API Integration
+
+---
 
 ## 👩‍💻 Developer
 
 **Nandana Rajeev**
 
-Built as a portfolio project while learning Django Full Stack Development.
+Computer Science Engineering Graduate | Python & Django Full Stack Developer
