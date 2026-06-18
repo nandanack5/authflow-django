@@ -1,47 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'accounts/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+{% block title %}
+Dashboard
+{% endblock %}
 
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'accounts/css/dashboard.css' %}">
-</head>
+{% block content %}
 
-<body>
+<div class="container mt-5">
 
-    <nav>
+    <div class="text-center mb-5">
 
-        <div class="logo">
-            AuthFlow
+        <h1>
+
+            👋 Welcome, {{ request.user.first_name|default:request.user.username }}
+
+        </h1>
+
+        <p class="text-muted">
+
+            Manage your account from one place.
+
+        </p>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow h-100">
+
+                <div class="card-body text-center">
+
+                    <h3>👤</h3>
+
+                    <h5>Profile</h5>
+
+                    <p>View your account information.</p>
+
+                    <a href="/profile/" class="btn btn-primary">
+
+                        Open
+
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div>
+        <div class="col-md-4 mb-4">
 
-            <a href="/logout/">Logout</a>
+            <div class="card shadow h-100">
+
+                <div class="card-body text-center">
+
+                    <h3>✏️</h3>
+
+                    <h5>Edit Profile</h5>
+
+                    <p>Update your personal information.</p>
+
+                    <a href="/edit-profile/" class="btn btn-warning">
+
+                        Edit
+
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </nav>
+        <div class="col-md-4 mb-4">
 
-    <div class="dashboard">
+            <div class="card shadow h-100">
 
-        <h1>Welcome {{ request.user.username }} 👋</h1>
+                <div class="card-body text-center">
 
-        <p>Email: {{ request.user.email }}</p>
+                    <h3>🔒</h3>
 
-        <div class="card">
+                    <h5>Change Password</h5>
 
-            <h2>Your Django Dashboard</h2>
+                    <p>Keep your account secure.</p>
 
-            <p>You have successfully logged in.</p>
+                    <a href="/change-password/" class="btn btn-success">
+
+                        Change
+
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
-</body>
+</div>
 
-</html>
+{% endblock %}
