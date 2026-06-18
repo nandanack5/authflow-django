@@ -10,16 +10,16 @@ Dashboard
 
     <div class="text-center mb-5">
 
-        <h1>
+        <h1 class="display-5 fw-bold">
 
-            👋 Welcome, {{ request.user.first_name|default:request.user.username }}
+            Welcome,
 
+            {{ request.user.first_name|default:request.user.username }}
+
+    
         </h1>
-
         <p class="text-muted">
-
-            Manage your account from one place.
-
+            Access your profile, update your information and manage your account securely.
         </p>
 
     </div>

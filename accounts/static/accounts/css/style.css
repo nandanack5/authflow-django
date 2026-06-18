@@ -142,3 +142,55 @@ footer {
     margin-top: 100px;
 
 }
+
+.hero {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(135deg,#2563eb,#1e40af);
+
+    color: white;
+
+    border-radius: 20px;
+
+}
+
+.hero h1 {
+
+    font-size: 60px;
+
+    font-weight: bold;
+
+}
+
+.hero p {
+
+    font-size: 22px;
+
+    color: #f8f9fa;
+
+}
+
+.feature-card {
+
+    transition: 0.3s;
+
+    border-radius: 15px;
+
+}
+
+.feature-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.btn-custom {
+
+    padding: 12px 30px;
+
+    border-radius: 10px;
+
+}
