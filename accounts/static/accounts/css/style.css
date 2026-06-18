@@ -1,159 +1,37 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+/* ===========================
+   Global Styles
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body{
-
-    background:#f8fafc;
-
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
 }
 
-nav{
 
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:25px 70px;
-
-    background:white;
-
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-
-}
-
-.logo{
-
-    font-size:32px;
-
-    font-weight:bold;
-
-    color:#2563eb;
-
-}
-
-.menu{
-
-    display:flex;
-
-    gap:35px;
-
-}
-
-.menu a{
-
-    text-decoration:none;
-
-    color:#333;
-
-    font-size:18px;
-
-}
-
-.hero{
-
-    text-align:center;
-
-    margin-top:120px;
-
-}
-
-.hero h1{
-
-    font-size:60px;
-
-    color:#1e3a8a;
-
-}
-
-.hero p{
-
-    width:700px;
-
-    max-width:90%;
-
-    margin:30px auto;
-
-    color:#555;
-
-    font-size:22px;
-
-    line-height:1.6;
-
-}
-
-.buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-}
-
-button{
-
-    padding:15px 35px;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:#2563eb;
-
-    color:white;
-
-    font-size:18px;
-
-    cursor:pointer;
-
-}
-
-.secondary{
-
-    background:white;
-
-    color:#2563eb;
-
-    border:2px solid #2563eb;
-
-}
-
-.card {
-
-    transition: 0.3s;
-
-}
-
-.card:hover {
-
-    transform: translateY(-5px);
-
-}
-
-footer {
-
-    margin-top: 100px;
-
-}
+/* ===========================
+   Hero Section
+=========================== */
 
 .hero {
 
-    padding: 100px 20px;
-
-    text-align: center;
-
-    background: linear-gradient(135deg,#2563eb,#1e40af);
+    background: linear-gradient(135deg, #2563eb, #1e40af);
 
     color: white;
 
+    text-align: center;
+
+    padding: 100px 20px;
+
     border-radius: 20px;
+
+    margin-top: 30px;
 
 }
 
@@ -163,17 +41,129 @@ footer {
 
     font-weight: bold;
 
+    margin-bottom: 20px;
+
 }
 
 .hero p {
+
+    max-width: 750px;
+
+    margin: auto;
 
     font-size: 22px;
 
     color: #f8f9fa;
 
+    line-height: 1.7;
+
+}
+
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn-custom {
+
+    padding: 12px 30px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.btn-custom:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ===========================
+   Cards
+=========================== */
+
+.card {
+
+    border: none;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
 }
 
 .feature-card {
+
+    border-radius: 15px;
+
+}
+
+.feature-card h1 {
+
+    font-size: 55px;
+
+}
+
+.feature-card h4 {
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+}
+
+.feature-card p {
+
+    color: #666;
+
+}
+
+
+/* ===========================
+   Forms
+=========================== */
+
+form {
+
+    width: 100%;
+
+}
+
+.form-control {
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+}
+
+.form-control:focus {
+
+    box-shadow: none;
+
+    border-color: #2563eb;
+
+}
+
+
+/* ===========================
+   Dashboard Cards
+=========================== */
+
+.dashboard-card {
 
     transition: 0.3s;
 
@@ -181,16 +171,46 @@ footer {
 
 }
 
-.feature-card:hover {
+.dashboard-card:hover {
 
     transform: translateY(-8px);
 
 }
 
-.btn-custom {
 
-    padding: 12px 30px;
+/* ===========================
+   Footer
+=========================== */
 
-    border-radius: 10px;
+footer {
+
+    margin-top: 80px;
+
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        padding: 70px 20px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
 
 }
